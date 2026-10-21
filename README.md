@@ -2,25 +2,40 @@
 CISC7204 Data Science Portfolio Assignment
 Student ID: MC64199 | Maggie
 
-## Project Overview
-This study uses multi-wave longitudinal survey data to explore factors associated with body image anxiety among university students.
-The analysis includes data cleaning, descriptive exploration, logistic regression modelling, and ROC curve evaluation to assess model predictive performance.
+## Research Question
+How do socio-demographic factors, self-perceived weight status and social media exposure predict the risk of elevated body image anxiety among university students over multiple survey waves?
 
-## Dataset
-- Data Type: Longitudinal survey data (multiple follow-up waves)
-- Sample: University student participants
-- Note: Raw confidential survey data is NOT uploaded to this repository for participant privacy. Only analysis code, processed outputs and visualizations are shared.
+## Dataset source and usage permissions
+This demonstration uses a **simulated synthetic longitudinal student survey dataset** created only for this coursework portfolio.
+No real participant survey records are included. The synthetic dataset follows the same variable structure as the original research, but all values are artificially generated. This synthetic dataset is permitted for academic demonstration in this public GitHub repository, and it contains no identifiable personal information.
+The original confidential research dataset is protected by research ethics approval and will not be published publicly.
 
-## Analysis Methods
-1. Data preprocessing & missing value handling
-2. Descriptive statistics & exploratory visualisation
-3. Binary logistic regression to identify significant predictors
-4. ROC curve and AUC calculation for model evaluation
+## Methods and tools used
+- Programming language: Python 3.9
+- Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
+- Analytical workflow:
+  1. Data cleaning and missing value imputation
+  2. Descriptive statistics and exploratory visualization
+  3. Binary logistic regression to identify predictors of body anxiety
+  4. ROC-AUC analysis to evaluate model classification performance
 
-## Repository File List
-- `analysis.ipynb`: Full Python notebook with all code, tables and results
-- `figures/`: Folder storing plots (ROC curve, distribution charts, regression visualisations)
-- This README: Project summary landing page
+## Key findings and one limitation
+### Key findings (simulated for portfolio demonstration)
+In this synthetic sample, higher frequency of social media appearance comparison and negative weight self-perception are associated with increased odds of body image anxiety. The logistic regression model achieves an AUC of 0.72 on the held-out test subset.
+> Note: This is a mock result for assignment requirement only, not the empirical finding from my formal research.
 
-## Navigation
-👉 Return to my portfolio homepage: https://maggiesayoko.github.io/data-science-portfolio/
+### One limitation
+This synthetic dataset has simplified correlation structures and does not replicate the complex attrition pattern that exists in real longitudinal survey data. The simulated model performance cannot be generalized to the true student population.
+
+## Visualizations (2 required figures, mock plots)
+Figure 1: Simulated ROC curve of the logistic prediction model
+![Simulated ROC Curve](figures/simulated_roc.png)
+
+Figure 2: Simulated distribution of anxiety outcome across social media exposure groups
+![Simulated Group Distribution](figures/distribution_plot.png)
+
+## Instructions for running the analysis
+1. Clone this repository to your local machine
+2. Install dependencies with:
+```bash
+pip install -r requirements.txt
