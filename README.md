@@ -14,10 +14,13 @@ The original confidential research dataset is protected by research ethics appro
 - Programming language: Python 3.9
 - Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
 - Analytical workflow:
-  1. Data cleaning and missing value imputation
-  2. Descriptive statistics and exploratory visualization
-  3. Binary logistic regression to identify predictors of body anxiety
-  4. ROC-AUC analysis to evaluate model classification performance
+
+![Analytical Pipeline Summary](figures/analytical_pipeline.png)
+
+1. Data cleaning and missing value imputation
+2. Descriptive statistics and exploratory visualization
+3. Binary logistic regression to identify predictors of body anxiety
+4. ROC-AUC analysis to evaluate model classification performance
 
 ## Key findings and one limitation
 ### Key findings (simulated for portfolio demonstration)
@@ -27,12 +30,9 @@ In this synthetic sample, higher frequency of social media appearance comparison
 ### One limitation
 This synthetic dataset has simplified correlation structures and does not replicate the complex attrition pattern that exists in real longitudinal survey data. The simulated model performance cannot be generalized to the true student population.
 
-## Visualizations (2 required figures, mock plots)
+## Visualizations
 Figure 1: Simulated ROC curve of the logistic prediction model
-![Simulated ROC Curve](figures/simulated_roc.png)
-
-Figure 2: Simulated distribution of anxiety outcome across social media exposure groups
-![Simulated Group Distribution](figures/distribution_plot.png)
+![Simulated ROC Example for Illustration](figures/simulated_roc.png)
 
 ## Instructions for running the analysis
 1. Clone this repository to your local machine
